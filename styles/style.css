@@ -1,14 +1,8 @@
+/* Постарался все сделать в соответствии с рекомендациями и замечаниями! */
 
-/* Постарался сделать по максимуму с требованиями проектной работы, но сам бы сделал по-другому, особенно блок kaufman...Но штош, не выпендриваюсь и делаю в соответствии с заданием :D */
-
-/* Ну и фиксированная ширина/высота тоже в соответствии с инструкциями */
+/* Если Вы Денис Игнатов, то отдельное спасибо за офигенное ревью, все по делу и подробно, СПАСИБО! */
 
 /* Удачной проверки и хорошего дня! ^^ */
-
-body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
-  margin: 0;
-  padding: 0;
-}
 
 .page {
   min-width: 1100px;
@@ -23,6 +17,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 
 .link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .logo {
@@ -44,20 +39,23 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   background-color: #f2f2f2;
 }
 
-.header__logo {
+.logo_place_header {
   position: absolute;
   top:30px;
   left: 64px;
 }
 
 .header__title {
+  margin: 0;
   max-width: 730px;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
+  z-index: 3;
 }
 
 .header__subtitle {
+  margin: 0;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -65,6 +63,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  z-index: 3;
 }
 
 .header__main-illustration {
@@ -93,16 +92,14 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   justify-content: center;
 }
 
-.description__container {
-  width: 80%;
-}
-
 .two-columns {
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   font-size: 18px;
   line-height: 1.2;
@@ -113,17 +110,16 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .two-columns__paragraph {
+  margin: 0;
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
-  margin-bottom: 30px;
-}
-
-.two-columns__paragraph:last-child {
-  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -143,6 +139,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 }
 
 .section-title {
+  margin: 0;
   width: 60%;
   text-align: center;
   padding-bottom: 20px;
@@ -153,16 +150,17 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 }
 
 .section-subtitle {
+  margin: 0;
   width: 60%;
   text-align: center;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   z-index: 2;
 }
 
-.section__table {
+.table {
   width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -173,25 +171,25 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 
 .table__cell {
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .table__heading {
-  margin-bottom: 20px;
+  margin: 0;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
 }
 
 .table__text {
+  margin: 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
-  margin-bottom: 20px;
 }
 
-.table__text:last-child {
-  margin-bottom: 0;
-}
 
 /* ---- feynman ---- */
 
@@ -199,7 +197,8 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 
 .feynman {
   position: relative;
-  padding-top: 100px;
+  min-height: 890px;
+  text-align: center;
   background-color: #f2f2f2;
   background-image: url("/images/feynman.png");
   background-repeat: no-repeat;
@@ -207,13 +206,9 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   background-size: 867px;
 }
 
-.feynman__container {
-  min-height: 790px;
-  text-align: center;
-}
-
 .feynman__title {
   width: 648px;
+  padding-top: 100px;
   font-size: 120px;
   font-weight: 600;
   line-height: 1.15;
@@ -221,6 +216,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 }
 
 .feynman__subtitle {
+  margin: 0;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
@@ -246,6 +242,10 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-image: url("/images/kaufman-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 877px 877px;
+  background-position: top right -210px;
 }
 
 .section-title_theme_dark {
@@ -254,14 +254,13 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 }
 
 .section-subtitle_theme_dark {
+  margin-bottom: 80px;
   color: white;
-  padding: 0;
   z-index: 2;
 }
 
-
-.section-table_theme_dark {
-  row-gap: 0;
+.table_theme_dark {
+  row-gap: 80px;
   z-index: 2;
 }
 
@@ -269,7 +268,6 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 80px;
 }
 
 .kaufman__triangle {
@@ -289,29 +287,12 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   color: white;
 }
 
-.footer__container {
+.footer__columns {
   width: 90%;
   margin: 0 auto;
-}
-
-.footer__columns {
   display: flex;
   justify-content: space-between;
   min-height: 350px;
-}
-
-.footer__copyright {
-  flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer__author {
-  padding: 18px 0;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 25px;
 }
 
 .footer__column {
@@ -319,7 +300,21 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   flex-direction: column;
 }
 
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.footer__author {
+  margin: 0;
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
 .footer__column-heading {
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 600;
@@ -327,6 +322,11 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 }
 
 .footer__column-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-link {
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
