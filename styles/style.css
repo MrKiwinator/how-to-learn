@@ -40,8 +40,6 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   display: flex;
   align-items: center;
   position: relative;
-  min-height: 600px;
-  max-height: 756px;
   padding-left: 64px;
   background-color: #f2f2f2;
 }
