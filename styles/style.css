@@ -21,19 +21,6 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
 .link {
   text-decoration: none;
 }
@@ -46,6 +33,10 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 /* ---- header ---- */
 
 .header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
   display: flex;
   align-items: center;
   position: relative;
@@ -88,6 +79,8 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 }
 
 .header__square-pic {
+  height: 568px;
+  width: 568px;
   position: absolute;
   right: 0;
   top: 64px;
@@ -116,7 +109,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  color:#2f80ed
+  color:#2f80ed;
 }
 
 .two-columns__main-text {
@@ -154,7 +147,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 .section-title {
   width: 60%;
   text-align: center;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
   font-size: 60px;
   font-weight: 600;
   line-height: 1.15;
