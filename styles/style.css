@@ -31,6 +31,11 @@ body, div, p, h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
 /* ---- header ---- */
 
 .header {
@@ -47,8 +52,6 @@ body, div, p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top:30px;
   left: 64px;
-  width: 228px;
-  height: 32px;
 }
 
 .header__title {
@@ -194,6 +197,8 @@ body, div, p, h1, h2, h3, h4, h5, h6 {
 
 /* ---- feynman ---- */
 
+/* Сделал, как требуется в задании, хотя логичее задать цвет текста блоку. Но штош, делаю, как того требует задание :) */
+
 .feynman {
   position: relative;
   padding-top: 100px;
@@ -277,4 +282,73 @@ body, div, p, h1, h2, h3, h4, h5, h6 {
   height: 877px;
   z-index: 1;
 }
+
+/* ---- footer ---- */
+
+.footer {
+  background-color: #1f1f1f;
+  padding: 60px 0 40px 0;
+  color: white;
+}
+
+.footer__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  min-height: 350px;
+}
+
+.footer__copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__author {
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.footer__column-links {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: white;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.footer__column-links:last-child {
+  padding-bottom: 16px;
+}
+
+
+
+
+
+
+
 
