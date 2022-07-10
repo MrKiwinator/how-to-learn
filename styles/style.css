@@ -1,8 +1,6 @@
 /* 
-Думаю, что задал именно ту структуру, которую Вы хотели увидеть.
-Не совсем понял, мне нужно заменить тег <section> на <article>, или вложить второй в первый.
-Ну и если в этом моменте будет замечание, пожалуйста, объясните подробнее :) 
-Спасибо!
+Упс! Не обратил внимание, что заголовки посъезжали x)
+Надеюсь, что теперь будет ок!
 */
 
 /* Удачной проверки и хорошего дня! ^^ */
@@ -92,11 +90,11 @@
 
 .description {
   padding: 100px 0;
-  display: flex;
-  justify-content: center;
+
 }
 
 .two-columns {
+  margin: 0 auto;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -135,15 +133,15 @@
 /* ---- digits ---- */
 
 .digits {
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
 }
 
 .section-title {
-  margin: 0;
+  margin: 0 auto;
   width: 60%;
   text-align: center;
   padding-bottom: 20px;
@@ -154,7 +152,7 @@
 }
 
 .section-subtitle {
-  margin: 0;
+  margin: 0 auto;
   width: 60%;
   text-align: center;
   margin-bottom: 60px;
