@@ -2,6 +2,5 @@
     font-size: 30px;
     font-weight: normal;
     line-height: 42px;
+    height: min-content;
 }
-
-/* Делал в соответствии с брифом, там ссылка дана на всю высоту элемента "book-container" */ 
